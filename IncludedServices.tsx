@@ -1,5 +1,5 @@
 import React from 'react';
-import { INCLUDED_SERVICES } from '../data';
+import { INCLUDED_SERVICES } from './data';
 import { CheckCircle2, ShieldCheck } from 'lucide-react';
 
 export const IncludedServices: React.FC = () => {
