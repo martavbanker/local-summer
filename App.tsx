@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from './Header.tsx';
+import { Header } from './Header';
 import { Hero } from './Hero';
 import { Pillars } from './Pillars';
 import { WhySpain } from './WhySpain';
