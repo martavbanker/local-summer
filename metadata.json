@@ -1,0 +1,6 @@
+{
+  "name": "Local Summer | Mallorca Summer Program",
+  "description": "A Mediterranean summer experience in Mallorca, Spain for remote-working families.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
