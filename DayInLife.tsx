@@ -1,5 +1,5 @@
 import React from 'react';
-import { SCHEDULE_ITEMS } from '../data';
+import { SCHEDULE_ITEMS } from './data';
 import { Sun, Laptop, Compass, Utensils, Clock, Sparkles } from 'lucide-react';
 
 export const DayInLife: React.FC = () => {
