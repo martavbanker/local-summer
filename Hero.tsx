@@ -1,5 +1,5 @@
 import React from 'react';
-import { IMAGES } from '../data';
+import { IMAGES } from './data';
 
 interface HeroProps {
   onJoinWaitlist: () => void;
