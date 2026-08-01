@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SPAIN_HIGHLIGHTS } from '../data';
+import { SPAIN_HIGHLIGHTS } from './data';
 import { Sun, Utensils, HeartHandshake, Compass, Sparkles, Trophy, MapPin } from 'lucide-react';
 
 interface WhySpainProps {
