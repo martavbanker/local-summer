@@ -5,8 +5,8 @@ export interface WaitlistFormData {
   location: string;
   numChildren: number;
   childrenAges: string;
-  stayDuration: string;
-  priorities: string[];
+  stayDuration?: string;
+  priorities?: string[];
   comments?: string;
 }
 

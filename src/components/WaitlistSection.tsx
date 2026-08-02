@@ -10,8 +10,6 @@ export const WaitlistSection: React.FC = () => {
     location: '',
     numChildren: 2,
     childrenAges: '',
-    stayDuration: '4 Weeks',
-    priorities: ['Kids Spanish & Marine Program', 'Fast Wi-Fi Co-working'],
     comments: '',
   });
 
@@ -32,21 +30,9 @@ export const WaitlistSection: React.FC = () => {
     }
   }, []);
 
-  const handlePriorityToggle = (priority: string) => {
-    setFormData((prev) => {
-      const exists = prev.priorities.includes(priority);
-      return {
-        ...prev,
-        priorities: exists
-          ? prev.priorities.filter((p) => p !== priority)
-          : [...prev.priorities, priority],
-      };
-    });
-  };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.firstName || !formData.email) return;
+    if (!formData.firstName || !formData.lastName || !formData.email) return;
 
     setIsSubmitting(true);
     setTimeout(() => {
@@ -100,20 +86,20 @@ export const WaitlistSection: React.FC = () => {
 
               <div className="bg-[#FDFBF7] border border-[#016278]/20 rounded-2xl p-5 text-left text-xs space-y-2.5 max-w-md mx-auto shadow-sm">
                 <div className="flex justify-between border-b border-[#5A5A40]/15 pb-2">
+                  <span className="text-[#5A5A40]/70">Name:</span>
+                  <span className="font-semibold text-[#016278]">{formData.firstName} {formData.lastName}</span>
+                </div>
+                <div className="flex justify-between border-b border-[#5A5A40]/15 pb-2">
                   <span className="text-[#5A5A40]/70">Email:</span>
                   <span className="font-semibold text-[#016278]">{formData.email}</span>
                 </div>
                 <div className="flex justify-between border-b border-[#5A5A40]/15 pb-2">
                   <span className="text-[#5A5A40]/70">Location:</span>
-                  <span className="font-semibold text-[#016278]">{formData.location || 'US'}</span>
-                </div>
-                <div className="flex justify-between border-b border-[#5A5A40]/15 pb-2">
-                  <span className="text-[#5A5A40]/70">Children Traveling:</span>
-                  <span className="font-semibold text-[#016278]">{formData.numChildren} {formData.childrenAges ? `(${formData.childrenAges})` : ''}</span>
+                  <span className="font-semibold text-[#016278]">{formData.location || 'Not specified'}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-[#5A5A40]/70">Preferred Stay:</span>
-                  <span className="font-semibold text-[#016278]">{formData.stayDuration}</span>
+                  <span className="text-[#5A5A40]/70">Children Traveling:</span>
+                  <span className="font-semibold text-[#016278]">{formData.numChildren} {formData.childrenAges ? `(${formData.childrenAges})` : ''}</span>
                 </div>
               </div>
 
@@ -153,11 +139,12 @@ export const WaitlistSection: React.FC = () => {
 
                 <div className="space-y-1.5">
                   <label htmlFor="lastName" className="block text-xs font-bold text-[#016278] uppercase tracking-wider">
-                    Last name
+                    Last name <span className="text-[#D97757]">*</span>
                   </label>
                   <input
                     id="lastName"
                     type="text"
+                    required
                     value={formData.lastName}
                     onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                     placeholder="e.g. Jenkins"
@@ -233,62 +220,6 @@ export const WaitlistSection: React.FC = () => {
                   placeholder="e.g. 5, 8, and 12"
                   className="w-full px-4 py-3 rounded-xl border border-[#016278]/20 focus:border-[#D97757] focus:ring-2 focus:ring-[#D97757]/30 outline-none transition-all text-sm bg-white"
                 />
-              </div>
-
-              {/* Target Duration */}
-              <div className="space-y-1.5">
-                <label htmlFor="stayDuration" className="block text-xs font-bold text-[#016278] uppercase tracking-wider">
-                  Ideal stay duration
-                </label>
-                <select
-                  id="stayDuration"
-                  value={formData.stayDuration}
-                  onChange={(e) => setFormData({ ...formData, stayDuration: e.target.value })}
-                  className="w-full px-4 py-3 rounded-xl border border-[#016278]/20 focus:border-[#D97757] focus:ring-2 focus:ring-[#D97757]/30 outline-none transition-all text-sm bg-white text-[#5A5A40]"
-                >
-                  <option value="2 Weeks">2 Weeks</option>
-                  <option value="4 Weeks">4 Weeks (Recommended)</option>
-                  <option value="6 Weeks">6 Weeks</option>
-                  <option value="Full Summer">Full Summer (8+ Weeks)</option>
-                </select>
-              </div>
-
-              {/* Priorities */}
-              <div className="space-y-2 pt-2">
-                <label className="block text-xs font-bold text-[#016278] uppercase tracking-wider">
-                  What matters most for your family?
-                </label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
-                  {[
-                    'Kids Spanish & Marine Program',
-                    'Fast Wi-Fi Co-working',
-                    'Curated Family Apartment',
-                    'Local Cultural Experiences',
-                  ].map((item) => {
-                    const checked = formData.priorities.includes(item);
-                    return (
-                      <button
-                        key={item}
-                        type="button"
-                        onClick={() => handlePriorityToggle(item)}
-                        className={`text-left p-3 rounded-xl border transition-all flex items-center gap-2 ${
-                          checked
-                            ? 'bg-[#016278]/10 border-[#016278] text-[#016278] font-bold'
-                            : 'bg-white border-[#016278]/20 text-[#5A5A40] hover:border-[#D97757]'
-                        }`}
-                      >
-                        <div
-                          className={`w-4 h-4 rounded flex items-center justify-center text-white text-[10px] ${
-                            checked ? 'bg-[#016278]' : 'border border-[#016278]/30'
-                          }`}
-                        >
-                          {checked && '✓'}
-                        </div>
-                        {item}
-                      </button>
-                    );
-                  })}
-                </div>
               </div>
 
               {/* Comments */}

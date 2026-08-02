@@ -30,7 +30,7 @@ export default function App() {
       <Header onJoinWaitlist={handleScrollToWaitlist} />
       
       <main>
-        {/* Hero Section with Spanish Mediterranean Mallorca image replacing Santorini */}
+        {/* Hero Section with Spanish Mediterranean landscape */}
         <Hero onJoinWaitlist={handleScrollToWaitlist} />
 
         {/* Core Pillars: Designed around real family life */}
