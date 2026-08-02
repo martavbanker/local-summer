@@ -65,7 +65,7 @@ export const Footer: React.FC<FooterProps> = ({ onJoinWaitlist }) => {
               GO TO WAITLIST FORM
             </button>
             <p className="text-[11px] text-white/60">
-              Questions? Reach us directly at <span className="text-[#F8C3B1] font-medium">hola@localsummer.com</span>
+              Questions? Reach us directly at <span className="text-[#F8C3B1] font-medium">alocalsummer@gmail.com</span>
             </p>
           </div>
 

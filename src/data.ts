@@ -1,16 +1,15 @@
 import { SpainHighlight, ScheduleItem, FaqItem } from './types';
 
-// Images imported/referenced
+// Images stored locally in public/images
 export const IMAGES = {
-  hero: '/src/assets/images/palma_city_hero_1785622886903.jpg',
-  village: '/src/assets/images/mallorca_village_deia_1785622195534.jpg',
-  cove: '/src/assets/images/mallorca_family_cove_1785622207347.jpg',
-  // Authentic Spanish Mediterranean secondary photos from Unsplash high quality CDNs with explicit referrer Policy
-  sailing: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80',
-  sollerTrain: 'https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?auto=format&fit=crop&w=1200&q=80',
-  palmaOldTown: 'https://images.unsplash.com/photo-1579282240050-352db0a14c21?auto=format&fit=crop&w=1200&q=80',
-  tapasTable: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=1200&q=80',
-  golfTennis: 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=1200&q=80',
+  hero: '/images/hero-spain.jpg',
+  village: '/images/village-deia.jpg',
+  cove: '/images/family-cove.jpg',
+  sailing: '/images/sailing.jpg',
+  sollerTrain: '/images/soller-train.jpg',
+  palmaOldTown: '/images/palma-old-town.jpg',
+  tapasTable: '/images/tapas-table.jpg',
+  golfTennis: '/images/golf-tennis.jpg',
 };
 
 // Brand Colors from "colores mediterraneos" palette
@@ -100,7 +99,7 @@ export const SCHEDULE_ITEMS: ScheduleItem[] = [
     iconName: 'Laptop',
   },
   {
-    time: '07:00 PM',
+    time: '~09:00 PM',
     title: 'Kids Pickup & Walk to Local Tapas',
     forWho: 'Family',
     description: 'After picking up the kids, stroll down pedestrian lanes to a local restaurant for tapas dinner and artisan gelato.',

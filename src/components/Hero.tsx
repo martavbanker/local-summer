@@ -1,5 +1,5 @@
 import React from 'react';
-import { IMAGES } from './data';
+import { IMAGES } from '../data';
 
 interface HeroProps {
   onJoinWaitlist: () => void;
@@ -30,8 +30,9 @@ export const Hero: React.FC<HeroProps> = ({ onJoinWaitlist }) => {
         </div>
 
         {/* Headline */}
-        <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight leading-[1.08] text-white max-w-3xl mx-auto drop-shadow-sm">
-          Bask in the <span className="italic text-[#F8C3B1]">Mediterranean</span> light.
+        <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight leading-[1.08] text-white max-w-4xl mx-auto drop-shadow-sm">
+          Experience the <br className="hidden sm:block" />
+          <span className="italic text-[#F8C3B1]">Mediterranean life</span>.
         </h1>
 
         {/* Lead statement */}
@@ -40,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({ onJoinWaitlist }) => {
         </p>
 
         {/* Narrative Body */}
-        <p className="text-sm sm:text-base text-white/85 max-w-2xl mx-auto font-normal leading-relaxed text-balance">
+        <p className="text-sm sm:text-base text-white/85 max-w-2xl mx-auto font-normal leading-relaxed text-balance pt-2">
           A thoughtfully designed summer immersion for remote-working families. Keep your US schedule and career routine while your children explore, learn Spanish, and play along the Mediterranean coast.
         </p>
 

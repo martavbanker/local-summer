@@ -1,14 +1,14 @@
 import React from 'react';
-import { Header } from './Header';
-import { Hero } from './Hero';
-import { Pillars } from './Pillars';
-import { WhySpain } from './WhySpain';
-import { IncludedServices } from './IncludedServices';
-import { DayInLife } from './DayInLife';
-import { FirstEditionCallout } from './FirstEditionCallout';
-import { WaitlistSection } from './WaitlistSection';
-import { FaqSection } from './FaqSection';
-import { Footer } from './Footer';
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
+import { Pillars } from './components/Pillars';
+import { WhySpain } from './components/WhySpain';
+import { IncludedServices } from './components/IncludedServices';
+import { DayInLife } from './components/DayInLife';
+import { FirstEditionCallout } from './components/FirstEditionCallout';
+import { WaitlistSection } from './components/WaitlistSection';
+import { FaqSection } from './components/FaqSection';
+import { Footer } from './components/Footer';
 
 export default function App() {
   const handleScrollToWaitlist = () => {

@@ -45,7 +45,7 @@ export const Pillars: React.FC = () => {
                 New international friends, marine sports, creative arts, nature discovery, and conversational Spanish with native instructors.
               </p>
             </div>
-            <p className="text-xs text-white/75 italic border-t border-white/10 pt-4">
+            <p className="text-xs text-[#F8C3B1] font-medium border-t border-white/10 pt-4">
               They won't be waiting for your last call. They'll be on their own Mediterranean adventure.
             </p>
           </div>
@@ -87,7 +87,7 @@ export const Pillars: React.FC = () => {
                 Boats, mountain hikes, coastal vineyards, tennis, golf, and the timeless Mediterranean pace of life.
               </p>
             </div>
-            <p className="text-xs text-white/75 italic border-t border-white/10 pt-4">
+            <p className="text-xs text-[#F8C3B1] font-medium border-t border-white/10 pt-4">
               We guide you to the genuine Spain away from tourist crowds.
             </p>
           </div>
