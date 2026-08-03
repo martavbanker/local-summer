@@ -70,6 +70,12 @@ export const Header: React.FC<HeaderProps> = ({ onJoinWaitlist }) => {
               Daily Life
             </a>
             <a
+              href="#about"
+              className="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-[#016278] hover:bg-[#016278] hover:text-white transition-all"
+            >
+              About Us
+            </a>
+            <a
               href="#faq"
               className="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-[#016278] hover:bg-[#016278] hover:text-white transition-all"
             >
@@ -137,6 +143,13 @@ export const Header: React.FC<HeaderProps> = ({ onJoinWaitlist }) => {
             className="block text-sm font-semibold uppercase tracking-wider text-[#5A5A40] py-1"
           >
             Daily Life
+          </a>
+          <a
+            href="#about"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-sm font-semibold uppercase tracking-wider text-[#5A5A40] py-1"
+          >
+            About Us
           </a>
           <a
             href="#faq"

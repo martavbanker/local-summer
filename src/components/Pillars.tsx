@@ -1,4 +1,5 @@
 import React from 'react';
+import { IMAGES } from '../data';
 
 export const Pillars: React.FC = () => {
   return (

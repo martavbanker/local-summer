@@ -3,8 +3,8 @@ export interface WaitlistFormData {
   lastName: string;
   email: string;
   location: string;
-  numChildren: number;
-  childrenAges: string;
+  numChildren: string;
+  childrenAges: string[];
   stayDuration?: string;
   priorities?: string[];
   comments?: string;

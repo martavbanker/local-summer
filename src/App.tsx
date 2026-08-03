@@ -5,6 +5,7 @@ import { Pillars } from './components/Pillars';
 import { WhySpain } from './components/WhySpain';
 import { IncludedServices } from './components/IncludedServices';
 import { DayInLife } from './components/DayInLife';
+import { AboutUs } from './components/AboutUs';
 import { FirstEditionCallout } from './components/FirstEditionCallout';
 import { WaitlistSection } from './components/WaitlistSection';
 import { FaqSection } from './components/FaqSection';
@@ -44,6 +45,9 @@ export default function App() {
 
         {/* Daily rhythm & US working hours alignment */}
         <DayInLife />
+
+        {/* About Us: Marta & Pilar story */}
+        <AboutUs />
 
         {/* First Edition Callout */}
         <FirstEditionCallout onJoinWaitlist={handleScrollToWaitlist} />

@@ -1,5 +1,5 @@
 import React from 'react';
-import { IMAGES } from '../data';
+import { IMAGES, FALLBACK_IMAGES } from '../data';
 
 interface HeroProps {
   onJoinWaitlist: () => void;
@@ -12,9 +12,12 @@ export const Hero: React.FC<HeroProps> = ({ onJoinWaitlist }) => {
       <div className="absolute inset-0 z-0">
         <img
           src={IMAGES.hero}
-          alt="Mallorca Spanish Mediterranean coastline turquoise cove and rustic stone architecture"
+          alt="Spanish Mediterranean coastline turquoise cove and rustic stone architecture"
           className="w-full h-full object-cover object-center scale-105 transition-transform duration-1000"
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            (e.target as HTMLImageElement).src = FALLBACK_IMAGES.hero;
+          }}
         />
         {/* Vibrant Teal Green Mediterranean Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#132E2D]/90 via-[#016278]/70 to-[#02858D]/45 backdrop-brightness-[0.88]" />

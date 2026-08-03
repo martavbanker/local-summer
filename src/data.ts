@@ -1,15 +1,32 @@
 import { SpainHighlight, ScheduleItem, FaqItem } from './types';
 
-// Images stored locally in public/images
+// Direct ES Module imports so Vite resolves asset paths reliably
+import heroImg from './assets/images/hero_mediterranean_coast_1785648984495.jpg';
+import villageImg from './assets/images/mediterranean_village_alley_1785648999408.jpg';
+import coveImg from './assets/images/spanish_family_cove_1785649010211.jpg';
+import tapasImg from './assets/images/mediterranean_tapas_table_1785649021492.jpg';
+import sailingImg from './assets/images/sailing_mediterranean_sea_1785649032553.jpg';
+import cityImg from './assets/images/palma_city_hero_1785622886903.jpg';
+
+// Curated high-resolution Unsplash Mediterranean fallbacks in case of image load errors
+export const FALLBACK_IMAGES = {
+  hero: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1600&auto=format&fit=crop',
+  village: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop',
+  cove: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1200&auto=format&fit=crop',
+  sailing: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop',
+  tapasTable: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?q=80&w=1200&auto=format&fit=crop',
+  palmaOldTown: 'https://images.unsplash.com/photo-1533105079780-92b9be482077?q=80&w=1200&auto=format&fit=crop',
+};
+
 export const IMAGES = {
-  hero: '/images/hero-spain.jpg',
-  village: '/images/village-deia.jpg',
-  cove: '/images/family-cove.jpg',
-  sailing: '/images/sailing.jpg',
-  sollerTrain: '/images/soller-train.jpg',
-  palmaOldTown: '/images/palma-old-town.jpg',
-  tapasTable: '/images/tapas-table.jpg',
-  golfTennis: '/images/golf-tennis.jpg',
+  hero: heroImg,
+  village: villageImg,
+  cove: coveImg,
+  sailing: sailingImg,
+  sollerTrain: villageImg,
+  palmaOldTown: cityImg,
+  tapasTable: tapasImg,
+  golfTennis: sailingImg,
 };
 
 // Brand Colors from "colores mediterraneos" palette
@@ -39,7 +56,7 @@ export const SPAIN_HIGHLIGHTS: SpainHighlight[] = [
     id: 'sunshine',
     name: '12 Hours of Sunshine',
     region: 'Weather & Climate',
-    description: 'Endless blue skies with virtually no rain all summer long, offering guaranteed outdoor warm Mediterranean days.',
+    description: 'Endless blue skies and sunny days, offering guaranteed outdoor warm Mediterranean days.',
     highlight: 'Reliable warm weather for daily sea dips and park visits.',
     image: IMAGES.cove,
   },

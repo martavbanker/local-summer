@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SPAIN_HIGHLIGHTS } from '../data';
+import { SPAIN_HIGHLIGHTS, FALLBACK_IMAGES } from '../data';
 import { Sun, Utensils, HeartHandshake, Compass, Sparkles, Trophy, MapPin } from 'lucide-react';
 
 interface WhySpainProps {
@@ -24,7 +24,7 @@ export const WhySpain: React.FC<WhySpainProps> = ({ onJoinWaitlist }) => {
           </h2>
 
           <p className="text-base sm:text-xl text-[#5A5A40]/90 font-normal leading-relaxed">
-            Virtually no rain all summer long. A vibrant Mediterranean culture, incredible food scene, world-class sports facilities, and an unforgettable environment for remote-working families.
+            Sunny days. A vibrant Mediterranean culture, incredible food scene, world-class sports facilities, and an unforgettable environment for remote-working families.
           </p>
 
           {/* Key Highlight Pills */}
@@ -51,7 +51,7 @@ export const WhySpain: React.FC<WhySpainProps> = ({ onJoinWaitlist }) => {
 
             <div className="bg-[#F5F0E6] col-span-2 sm:col-span-1 p-3.5 rounded-2xl border border-[#016278]/15 space-y-1 text-center">
               <Trophy className="w-5 h-5 text-[#D97757] mx-auto" />
-              <span className="text-xs font-bold text-[#016278] block">Tennis & Golf</span>
+              <span className="text-xs font-bold text-[#016278] block">Sports, Clubs & Adventures</span>
             </div>
           </div>
 
@@ -119,15 +119,23 @@ export const WhySpain: React.FC<WhySpainProps> = ({ onJoinWaitlist }) => {
             </div>
 
             {/* Selected Location Feature Visual Card */}
-            <div className="lg:col-span-7 bg-[#F5F0E6] rounded-2xl overflow-hidden border border-[#016278]/20 shadow-sm flex flex-col md:flex-row">
-              <div className="md:w-1/2 h-64 md:h-auto relative overflow-hidden">
+            <div className="lg:col-span-7 bg-[#F5F0E6] rounded-2xl overflow-hidden border border-[#016278]/20 shadow-sm flex flex-col md:flex-row min-h-[340px]">
+              <div className="w-full md:w-1/2 min-h-[280px] md:min-h-[340px] relative overflow-hidden bg-[#E2D9C8]">
                 <img
+                  key={selectedHighlight.id}
                   src={selectedHighlight.image}
                   alt={selectedHighlight.name}
-                  className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  className="absolute inset-0 w-full h-full object-cover transition-all duration-500 hover:scale-105"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const fallbackKey = selectedHighlight.id === 'slow-life' ? 'village' :
+                                       selectedHighlight.id === 'sunshine' ? 'cove' :
+                                       selectedHighlight.id === 'food-scene' ? 'tapasTable' :
+                                       selectedHighlight.id === 'culture' ? 'palmaOldTown' : 'sailing';
+                    (e.target as HTMLImageElement).src = FALLBACK_IMAGES[fallbackKey as keyof typeof FALLBACK_IMAGES] || FALLBACK_IMAGES.village;
+                  }}
                 />
-                <div className="absolute top-3 left-3 bg-[#016278]/90 backdrop-blur-md text-white text-[11px] px-3 py-1 rounded-full font-semibold uppercase tracking-wider">
+                <div className="absolute top-3 left-3 z-10 bg-[#016278]/90 backdrop-blur-md text-white text-[11px] px-3 py-1 rounded-full font-semibold uppercase tracking-wider">
                   {selectedHighlight.region}
                 </div>
               </div>

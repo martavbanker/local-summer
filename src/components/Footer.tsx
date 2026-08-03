@@ -32,7 +32,7 @@ export const Footer: React.FC<FooterProps> = ({ onJoinWaitlist }) => {
             </p>
             <div className="pt-1 flex items-center gap-2 text-xs text-[#F8C3B1]">
               <Palmtree className="w-4 h-4 text-[#D97757]" />
-              <span>Coastal Towns · Beaches · Tennis & Golf · Local Markets</span>
+              <span>Coastal Towns · Beaches · Sports & Adventures · Local Markets</span>
             </div>
           </div>
 
