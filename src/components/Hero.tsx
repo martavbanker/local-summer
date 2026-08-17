@@ -34,9 +34,9 @@ export const Hero: React.FC<HeroProps> = ({ onJoinWaitlist }) => {
 
         {/* Headline */}
         <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight leading-[1.08] text-white max-w-4xl mx-auto drop-shadow-sm">
-          Experience the <br className="hidden sm:block" />
-          <span className="italic text-[#F8C3B1]">Mediterranean life</span>.
-        </h1>
+  Spend your summer <br className="hidden sm:block" />
+  <span className="italic text-[#F8C3B1]">living in Spain</span>.
+</h1>
 
         {/* Lead statement */}
         <p className="text-lg sm:text-2xl font-medium text-white/95 max-w-2xl mx-auto leading-relaxed">

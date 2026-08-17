@@ -20,7 +20,7 @@ export const FaqSection: React.FC = () => {
             FREQUENTLY ASKED QUESTIONS
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl text-[#016278] font-normal">
-            Everything you need to know
+            Everything you need to know about a family summer in Spain
           </h2>
           <p className="text-sm sm:text-base text-[#5A5A40] max-w-xl mx-auto">
             Clear insights on US work schedules, accommodation standards, and children's programs in Spain.

@@ -11,7 +11,7 @@ export const Pillars: React.FC = () => {
             THE EXPERIENCE
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-normal leading-[1.12] text-white">
-            A Mediterranean summer. Designed around real family life.
+            A family summer in Spain, designed around real life.
           </h2>
 
           <div className="space-y-4 text-white/90 text-base sm:text-lg font-normal leading-relaxed">
@@ -37,7 +37,7 @@ export const Pillars: React.FC = () => {
                 01. FOR THE KIDS
               </span>
               <h3 className="font-serif text-2xl sm:text-3xl font-normal text-white group-hover:text-[#F8C3B1] transition-colors leading-snug">
-                A summer they'll talk about for years.
+                A local summer camp experience they'll talk about for years.
               </h3>
               <p className="text-sm text-white/85 leading-relaxed">
                 A thoughtfully structured local summer program aligned with US working hours.

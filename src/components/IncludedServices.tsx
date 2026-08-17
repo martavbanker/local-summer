@@ -13,7 +13,7 @@ export const IncludedServices: React.FC = () => {
             WHAT'S INCLUDED
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-normal text-[#5A5A40] leading-[1.12]">
-            The details you shouldn't have to figure out alone.
+            Everything you need for a family summer in Spain, handled for you.
           </h2>
           <p className="text-base sm:text-lg text-[#5A5A40]/85 font-normal">
             Our inaugural Summer 2027 edition includes comprehensive logistical support:

@@ -20,7 +20,7 @@ export const WhySpain: React.FC<WhySpainProps> = ({ onJoinWaitlist }) => {
           </span>
 
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-normal text-[#5A5A40] leading-[1.12]">
-            A slow-paced life under 12 hours of guaranteed summer sunshine.
+            A slower pace of life, Mediterranean sunshine, and summers made for families.
           </h2>
 
           <p className="text-base sm:text-xl text-[#5A5A40]/90 font-normal leading-relaxed">
@@ -74,7 +74,7 @@ export const WhySpain: React.FC<WhySpainProps> = ({ onJoinWaitlist }) => {
                 THE SPANISH SUMMER EXPERIENCE
               </span>
               <h3 className="font-serif text-2xl sm:text-4xl text-[#5A5A40] font-normal mt-1">
-                Why Spain is the ultimate summer home
+                Why Spain is the perfect summer home for families
               </h3>
             </div>
             <p className="text-xs text-[#5A5A40]/70 mt-2 md:mt-0">

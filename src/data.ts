@@ -168,6 +168,16 @@ export const INCLUDED_SERVICES = [
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
+    question: "What is A Local Summer?",
+    answer: "A Local Summer is a boutique summer program designed for remote-working families who want to spend an extended period living in Spain. Parents maintain their US work schedules while children participate in local afternoon summer programming, leaving mornings and weekends for families to experience Spain together.",
+    category: "Program",
+  },
+  {
+    question: "How do the US working hours work while in Spain?",
+    answer: "Spain is 6 hours ahead of US Eastern Time (9 hours ahead of Pacific Time). This means 9:00 AM in New York is 3:00 PM in Spain. Parents can spend mornings exploring beaches, parks, and cafes with family, then dedicate afternoon/evening hours to quiet US work calls while kids are in afternoon activities or supervised care.",
+    category: "Work & Tech",
+  },
+{
     question: "How do the US working hours work while in Spain?",
     answer: "Spain is 6 hours ahead of US Eastern Time (9 hours ahead of Pacific Time). This means 9:00 AM in New York is 3:00 PM in Spain. Parents can spend mornings exploring beaches, parks, and cafes with family, then dedicate afternoon/evening hours to quiet US work calls while kids are in afternoon activities or supervised care.",
     category: "Work & Tech",
