@@ -22,9 +22,6 @@ export const FaqSection: React.FC = () => {
           <h2 className="font-serif text-3xl sm:text-5xl text-[#016278] font-normal">
             Everything you need to know about a family summer in Spain
           </h2>
-          <p className="text-sm sm:text-base text-[#5A5A40] max-w-xl mx-auto">
-            Clear insights on US work schedules, accommodation standards, and children's programs in Spain.
-          </p>
         </div>
 
         {/* Accordion List */}
@@ -56,7 +53,7 @@ export const FaqSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-[#5A5A40] leading-relaxed border-t border-[#016278]/10">
+                  <div className="px-5 sm:px-6 pb-6 pt-1 text-sm sm:text-base text-[#5A5A40] leading-relaxed border-t border-[#016278]/10 whitespace-pre-line">
                     {item.answer}
                   </div>
                 )}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SPAIN_HIGHLIGHTS, FALLBACK_IMAGES } from '../data';
-import { Sun, Utensils, HeartHandshake, Compass, Sparkles, Trophy, MapPin } from 'lucide-react';
+import { Waves, Utensils, HeartHandshake, Compass, Sparkles, Trophy, MapPin } from 'lucide-react';
 
 interface WhySpainProps {
   onJoinWaitlist: () => void;
@@ -10,21 +10,22 @@ export const WhySpain: React.FC<WhySpainProps> = ({ onJoinWaitlist }) => {
   const [selectedHighlight, setSelectedHighlight] = useState(SPAIN_HIGHLIGHTS[0]);
 
   return (
-    <section id="why-spain" className="bg-[#FDFBF7] py-20 lg:py-28 px-4 sm:px-6 lg:px-8">
+    <section id="why-mallorca" className="bg-[#FDFBF7] py-20 lg:py-28 px-4 sm:px-6 lg:px-8 relative scroll-mt-12">
+      <span id="why-spain" className="sr-only" aria-hidden="true" />
       <div className="max-w-6xl mx-auto space-y-16">
         
         {/* Header Content - Elegant & Concise */}
         <div className="max-w-4xl space-y-6">
           <span className="text-xs font-bold tracking-widest text-[#016278] uppercase block">
-            WHY SPAIN?
+            WHY MALLORCA?
           </span>
 
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-normal text-[#5A5A40] leading-[1.12]">
-            A slower pace of life, Mediterranean sunshine, and summers made for families.
+            A slow-paced life with turquoise coves, pristine beaches, and sea access.
           </h2>
 
           <p className="text-base sm:text-xl text-[#5A5A40]/90 font-normal leading-relaxed">
-            Sunny days. A vibrant Mediterranean culture, incredible food scene, world-class sports facilities, and an unforgettable environment for remote-working families.
+            Crystal-clear waters. A vibrant Mediterranean culture, incredible food scene, world-class sports facilities, and an unforgettable environment for remote-working families.
           </p>
 
           {/* Key Highlight Pills */}
@@ -35,8 +36,8 @@ export const WhySpain: React.FC<WhySpainProps> = ({ onJoinWaitlist }) => {
             </div>
 
             <div className="bg-[#F5F0E6] p-3.5 rounded-2xl border border-[#016278]/15 space-y-1 text-center">
-              <Sun className="w-5 h-5 text-[#D97757] mx-auto" />
-              <span className="text-xs font-bold text-[#016278] block">12h Sunshine</span>
+              <Waves className="w-5 h-5 text-[#D97757] mx-auto" />
+              <span className="text-xs font-bold text-[#016278] block">Beaches & Coves</span>
             </div>
 
             <div className="bg-[#F5F0E6] p-3.5 rounded-2xl border border-[#016278]/15 space-y-1 text-center">
@@ -71,10 +72,10 @@ export const WhySpain: React.FC<WhySpainProps> = ({ onJoinWaitlist }) => {
             <div>
               <span className="text-xs font-bold tracking-widest text-[#016278] uppercase flex items-center gap-1.5">
                 <Compass className="w-4 h-4 text-[#D97757]" />
-                THE SPANISH SUMMER EXPERIENCE
+                THE MALLORCA SUMMER EXPERIENCE
               </span>
               <h3 className="font-serif text-2xl sm:text-4xl text-[#5A5A40] font-normal mt-1">
-                Why Spain is the perfect summer home for families
+                Why Mallorca is the ultimate summer home
               </h3>
             </div>
             <p className="text-xs text-[#5A5A40]/70 mt-2 md:mt-0">

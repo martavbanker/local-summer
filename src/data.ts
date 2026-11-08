@@ -54,10 +54,10 @@ export const SPAIN_HIGHLIGHTS: SpainHighlight[] = [
   },
   {
     id: 'sunshine',
-    name: '12 Hours of Sunshine',
-    region: 'Weather & Climate',
-    description: 'Endless blue skies and sunny days, offering guaranteed outdoor warm Mediterranean days.',
-    highlight: 'Reliable warm weather for daily sea dips and park visits.',
+    name: 'Beaches, Coves & Sea Access',
+    region: 'Coastline & Crystal Waters',
+    description: 'Over 200 breathtaking beaches, sheltered turquoise calas, and effortless daily sea access for family swims, paddleboarding, and boat outings.',
+    highlight: 'Afternoon dips in crystalline waters just minutes from your doorstep.',
     image: IMAGES.cove,
   },
   {
@@ -157,8 +157,8 @@ export const INCLUDED_SERVICES = [
     description: "Small group cohort of remote-working families who value culture, slow living, and shared adventures.",
   },
   {
-    title: "Babysitting and trusted local services",
-    description: "Vetted English & Spanish speaking sitters, grocery stocking before arrival, and airport transfers.",
+    title: "Trusted local services",
+    description: "Optional grocery stocking before arrival, special offers for car rentals, suggested babysitting services, and more",
   },
   {
     title: "Our curated insider guide to the region we love",
@@ -168,39 +168,34 @@ export const INCLUDED_SERVICES = [
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: "What is A Local Summer?",
-    answer: "A Local Summer is a boutique summer program designed for remote-working families who want to spend an extended period living in Spain. Parents maintain their US work schedules while children participate in local afternoon summer programming, leaving mornings and weekends for families to experience Spain together.",
+    question: "What are the exact dates for Summer 2027?",
+    answer: "The program will start on Sunday, June 20th, with a welcome event. Kids camp will start the following day, Monday the 21st, and will run until July 16th.",
     category: "Program",
   },
   {
-    question: "How do the US working hours work while in Spain?",
-    answer: "Spain is 6 hours ahead of US Eastern Time (9 hours ahead of Pacific Time). This means 9:00 AM in New York is 3:00 PM in Spain. Parents can spend mornings exploring beaches, parks, and cafes with family, then dedicate afternoon/evening hours to quiet US work calls while kids are in afternoon activities or supervised care.",
-    category: "Work & Tech",
-  },
-{
-    question: "How do the US working hours work while in Spain?",
-    answer: "Spain is 6 hours ahead of US Eastern Time (9 hours ahead of Pacific Time). This means 9:00 AM in New York is 3:00 PM in Spain. Parents can spend mornings exploring beaches, parks, and cafes with family, then dedicate afternoon/evening hours to quiet US work calls while kids are in afternoon activities or supervised care.",
+    question: "How do US working hours work while in Spain?",
+    answer: "Because Spain is 6 hours ahead of Eastern Time (EDT) and 9 hours ahead of Pacific Time (PDT), the US workday aligns naturally with the Spanish rhythm. 9:00 AM in New York is 3:00 PM in Spain, and 9:00 AM in California is 6:00 PM.\n\nThis enables our signature 'three lives in one day' flow: mornings are completely work-free for long family breakfasts and beach outings; afternoons and early evenings are dedicated to focused remote work while children attend camp and activities with trusted caregivers; and nights remain open for late Mediterranean dinners and family time together. Coworking spaces will be coordinated for those who prefer to work outside of the apartment.",
     category: "Work & Tech",
   },
   {
     question: "What ages are eligible for the children's summer program?",
-    answer: "Children of all ages are welcome. Camp activities and groups will be organized by age, focusing on sports, local arts, Spanish immersion, and outdoor exploration.",
+    answer: "Our camp is designed for kids between 3 and 13 years old. Activities and groups are organized by age, focusing on sports, marine exploration, creative arts, and Spanish immersion.",
     category: "Program",
   },
   {
+    question: "What will the community events be like?",
+    answer: "We will organize 2 events for the whole family and 2 events for adults only during the month.\n\nThere will also be other informal gatherings not included in the pricing but facilitated by A Local Summer, such as meetups at the beach, trips around the island, a visit to Palma, workout classes, and more.",
+    category: "Community",
+  },
+  {
     question: "What type of accommodation options will be available?",
-    answer: "We offer a curated list of vetted boutique apartments and central family residences equipped with fast Wi-Fi, air conditioning, fully equipped kitchens, and central access to both the kids' program center and local amenities.",
+    answer: "We will offer a selection of apartments at different price points, all located within a 15-minute drive of the camp in a nearby beach town.\n\nOur goal is to have families staying close to one another, fostering the sense of community that makes A Local Summer special and making it easy to get together, socialize, and enjoy local life.\n\nFor those looking for a more elevated experience, we will also offer a selection of high-end villas with 4–5 bedrooms.\n\nBoth apartments and villas can be shared by multiple families who wish to stay together.",
     category: "Housing",
   },
   {
     question: "Is this a tour group or resort package?",
     answer: "Neither! Local Summer provides the ideal infrastructure (vetted housing, child enrichment program, fast Wi-Fi, local concierge, and cohort community) so your family can live authentically in Spain with complete freedom and no tourist stress.",
     category: "Logistics",
-  },
-  {
-    question: "What are the exact dates for Summer 2027?",
-    answer: "We are planning for mid-June to mid-July, but final dates will be confirmed. Waitlist members will receive priority date selection and early notification as soon as official dates are locked in.",
-    category: "Program",
   },
 ];
 

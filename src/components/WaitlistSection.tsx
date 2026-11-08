@@ -109,8 +109,8 @@ export const WaitlistSection: React.FC = () => {
           <h2 className="font-serif text-4xl sm:text-6xl text-[#016278] font-normal tracking-tight">
             Join the waitlist
           </h2>
-          <p className="text-sm sm:text-base text-[#5A5A40] max-w-lg mx-auto">
-            Receive priority access to official dates, apartment previews, and early-bird registration for Summer 2027 in Spain.
+          <p className="text-base sm:text-lg text-[#5A5A40] max-w-xl mx-auto leading-relaxed">
+            We aim to finalize program details by November 2026 and open registration by January 2027. By joining our waitlist, you&apos;ll receive priority access to registration and monthly updates with dates and pricing, as we bring A Local Summer to life.
           </p>
         </div>
 

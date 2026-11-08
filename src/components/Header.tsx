@@ -38,7 +38,7 @@ export const Header: React.FC<HeaderProps> = ({ onJoinWaitlist }) => {
                 LOCAL <span className="font-serif italic text-[#D97757]">SUMMER</span>
               </span>
               <span className="text-[10px] tracking-widest uppercase font-semibold text-[#5A5A40] -mt-1 pl-0.5">
-                Spain · Summer 2027
+                Mallorca · Summer 2027
               </span>
             </div>
           </a>
@@ -52,10 +52,10 @@ export const Header: React.FC<HeaderProps> = ({ onJoinWaitlist }) => {
               The Experience
             </a>
             <a
-              href="#why-spain"
+              href="#why-mallorca"
               className="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-[#016278] hover:bg-[#016278] hover:text-white transition-all"
             >
-              Why Spain
+              Why Mallorca
             </a>
             <a
               href="#what-we-cover"
@@ -64,10 +64,10 @@ export const Header: React.FC<HeaderProps> = ({ onJoinWaitlist }) => {
               What's Included
             </a>
             <a
-              href="#a-day-in-life"
+              href="#the-camp"
               className="px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-[#016278] hover:bg-[#016278] hover:text-white transition-all"
             >
-              Daily Life
+              The Camp
             </a>
             <a
               href="#about"
@@ -124,11 +124,11 @@ export const Header: React.FC<HeaderProps> = ({ onJoinWaitlist }) => {
             The Experience
           </a>
           <a
-            href="#why-spain"
+            href="#why-mallorca"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-sm font-semibold uppercase tracking-wider text-[#5A5A40] py-1"
           >
-            Why Spain
+            Why Mallorca
           </a>
           <a
             href="#what-we-cover"
@@ -138,11 +138,11 @@ export const Header: React.FC<HeaderProps> = ({ onJoinWaitlist }) => {
             What's Included
           </a>
           <a
-            href="#a-day-in-life"
+            href="#the-camp"
             onClick={() => setMobileMenuOpen(false)}
             className="block text-sm font-semibold uppercase tracking-wider text-[#5A5A40] py-1"
           >
-            Daily Life
+            The Camp
           </a>
           <a
             href="#about"

@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Pillars } from './components/Pillars';
+import { TheCamp } from './components/TheCamp';
 import { WhySpain } from './components/WhySpain';
 import { IncludedServices } from './components/IncludedServices';
 import { DayInLife } from './components/DayInLife';
@@ -41,10 +42,13 @@ export default function App() {
         <WhySpain onJoinWaitlist={handleScrollToWaitlist} />
 
         {/* What's Included / No tourist traps */}
-        <IncludedServices />
+<IncludedServices />
 
-        {/* Daily rhythm & US working hours alignment */}
-        <DayInLife />
+{/* The Camp: Agora Portals International School */}
+<TheCamp onJoinWaitlist={handleScrollToWaitlist} />
+
+{/* Daily rhythm & US working hours alignment */}
+<DayInLife />
 
         {/* About Us: Marta & Pilar story */}
         <AboutUs />
