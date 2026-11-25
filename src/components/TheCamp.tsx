@@ -136,10 +136,38 @@ export const TheCamp: React.FC<TheCampProps> = ({ onJoinWaitlist }) => {
               </div>
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-[#016278]">Inaugural Edition Tuition</span>
-                <div className="flex items-baseline gap-2 mt-1">
-                  <span className="font-serif text-3xl sm:text-4xl font-bold text-[#016278]">€590</span>
-                  <span className="text-sm font-semibold text-[#5A5A40]">per child, per week</span>
-                  <span className="text-xs text-[#D97757] font-bold uppercase tracking-wide ml-2 bg-[#D97757]/10 px-2.5 py-0.5 rounded-full">Early Bird</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-2">
+                  {/* Early-Bird Tier */}
+                  <div className="bg-white/90 rounded-2xl p-4 border border-[#016278]/20 shadow-xs space-y-1">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-[11px] text-[#D97757] font-bold uppercase tracking-wide bg-[#D97757]/10 px-2.5 py-0.5 rounded-full">
+                        Early Bird
+                      </span>
+                      <span className="text-[11px] font-semibold text-[#016278]">
+                        Register &amp; pay by 1/14
+                      </span>
+                    </div>
+                    <div className="flex items-baseline gap-1.5 pt-1">
+                      <span className="font-serif text-3xl sm:text-4xl font-bold text-[#016278]">€500</span>
+                      <span className="text-xs sm:text-sm font-semibold text-[#5A5A40]">per child / week</span>
+                    </div>
+                  </div>
+
+                  {/* Second Tier */}
+                  <div className="bg-white/60 rounded-2xl p-4 border border-[#016278]/15 space-y-1">
+                    <div className="flex items-center justify-between gap-2">
+                      <span className="text-[11px] text-[#016278] font-bold uppercase tracking-wide bg-[#016278]/10 px-2.5 py-0.5 rounded-full">
+                        Standard
+                      </span>
+                      <span className="text-[11px] font-semibold text-[#5A5A40]">
+                        After 1/14 &amp; by 3/14
+                      </span>
+                    </div>
+                    <div className="flex items-baseline gap-1.5 pt-1">
+                      <span className="font-serif text-3xl sm:text-4xl font-bold text-[#016278]">€575</span>
+                      <span className="text-xs sm:text-sm font-semibold text-[#5A5A40]">per child / week</span>
+                    </div>
+                  </div>
                 </div>
               </div>
               <p className="text-sm text-[#5A5A40] leading-relaxed">
