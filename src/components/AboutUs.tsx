@@ -33,7 +33,7 @@ export const AboutUs: React.FC = () => {
             <div className="space-y-5">
               <div className="flex items-center gap-4 sm:gap-5">
                 <img
-                  src="/marta.jpeg"
+                  src="/images/marta.jpeg"
                   alt="Marta"
                   className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-white shadow-md object-cover shrink-0"
                 />
@@ -93,7 +93,7 @@ export const AboutUs: React.FC = () => {
             <div className="space-y-5">
               <div className="flex items-center gap-4 sm:gap-5">
                 <img
-                  src="/pilar.jpeg"
+                  src="/images/pilar.jpeg"
                   alt="Pilar"
                   className="w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-white shadow-md object-cover shrink-0"
                 />
